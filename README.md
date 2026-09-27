@@ -1,4 +1,4 @@
-# mcp-server
+# mcp-toolkit
 
 A [Model Context Protocol (MCP)](https://modelcontextprotocol.io) server that
 gives an LLM safe, useful tools: sandboxed file operations, a calculator, and
@@ -78,10 +78,10 @@ Add this to your Claude Desktop config
 {
   "mcpServers": {
     "toolkit": {
-      "command": "/absolute/path/to/mcp-server/.venv/bin/python",
-      "args": ["/absolute/path/to/mcp-server/server.py"],
+      "command": "/absolute/path/to/mcp-toolkit/.venv/bin/python",
+      "args": ["/absolute/path/to/mcp-toolkit/server.py"],
       "env": {
-        "MCP_WORKSPACE": "/absolute/path/to/mcp-server/workspace"
+        "MCP_WORKSPACE": "/absolute/path/to/mcp-toolkit/workspace"
       }
     }
   }
@@ -104,7 +104,7 @@ Restart Claude Desktop and the tools appear in the tool picker.
 ## Project structure
 
 ```
-mcp-server/
+mcp-toolkit/
 ├── server.py                 # MCPServer: tools, resources, prompts
 ├── tools/
 │   ├── filesystem.py         # sandboxed file tools (pure functions)
