@@ -17,7 +17,7 @@ from tools import calculator, database, filesystem  # noqa: E402
 
 logging.basicConfig(level=logging.INFO,
                     format="%(asctime)s | %(levelname)-7s | %(name)s | %(message)s")
-log = logging.getLogger("mcp-server")
+log = logging.getLogger("mcp-toolkit")
 
 mcp = MCPServer("toolkit")
 
