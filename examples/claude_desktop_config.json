@@ -1,0 +1,1 @@
+{"mcpServers":{"toolkit":{"args":["/absolute/path/to/mcp-server/server.py"],"command":"/absolute/path/to/mcp-server/.venv/bin/python","env":{"MCP_WORKSPACE":"/absolute/path/to/mcp-server/workspace"}}}}
